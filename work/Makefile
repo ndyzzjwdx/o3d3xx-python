@@ -1,11 +1,11 @@
-
+include ../Makefile.conf
 
 all:
-	make -C ..
+	make -C ../
 
 clean:
-	-rm -f *.o
+	make -C ../ clean
 
 test:
-	python3 hello.py
+	python3 hello.py 
 	

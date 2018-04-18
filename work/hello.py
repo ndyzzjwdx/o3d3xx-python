@@ -1,4 +1,6 @@
-#/usr/bin/python
+#/usr/bin/python3
+
+from settings import *
 
 import o3d3xx
 import sys
@@ -6,9 +8,9 @@ import time
 
 def main():
 	if len(sys.argv) > 1:
-		address=sys.argv[1]
+		address = sys.argv[1]
 	else:
-		address='192.168.0.69'
+		address = CAMERAIP
 	print('IP:' + str(address))
 	
 	session = createSession(address)
